@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <title>Encriptador v2.0</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1 class="titulo-principal">Encriptador</h1>
+        </header>
+        <main class="main">
+            <section class="caja1">
+                <textarea cols="40" rows="20" id="texto-encriptado" class="campo-texto" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="alerta">
+                    <!-- <img src="imagenes/bi_exclamation-circle-fill.png" alt="Simbolo de alerta"> -->
+                    <span>Sólo minúsculas y sin acentos</span>
+                </div>
+                <div class="botones">
+                    <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="caja2">
+                <textarea cols="40" rows="20" id="mensaje" class="campo-mensaje"></textarea>
+                <button class="copiar" onclick="copiarTexto()">Copiar</button>
+            </section>
+         </main>
+         <footer>
+            <ul>
+                <li><a href="https://github.com/matiasesaucedo" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/matiasesaucedo/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
